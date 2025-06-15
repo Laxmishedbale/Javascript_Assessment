@@ -1,0 +1,38 @@
+<!-- 
+ add one button, name is add para, and click the button then send one message
+ hii in javascript
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Para Button</title>
+  <style>
+    #Btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  
+  <button id="Btn">Add Para</button>
+
+  <script>
+    document.getElementById('Btn').addEventListener('click', function() {
+      const p = document.createElement('p');
+      p.textContent = 'Hii';
+      document.body.appendChild(p);
+    });
+  </script>
+</body>
+</html>

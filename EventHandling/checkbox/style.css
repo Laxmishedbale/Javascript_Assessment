@@ -1,0 +1,18 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.field {
+  margin-bottom: 12px;
+}
+
+label {
+  margin-right: 8px;
+}
+
+input[type="password"],
+input[type="text"] {
+  padding: 6px;
+  font-size: 16px;
+}

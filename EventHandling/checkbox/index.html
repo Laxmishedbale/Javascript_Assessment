@@ -1,0 +1,29 @@
+<!-- Create a password input field with a checkbox labeled "Show Password". 
+ When the checkbox is checked, change the input type from "password" to "text" 
+ and back when unchecked. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Show Password Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="field">
+    <label for="passwordInput">Password:</label>
+    <input type="password" id="passwordInput" />
+  </div>
+
+  <div class="field">
+    <label>
+      <input type="checkbox" id="toggleCheckbox" />
+      Show Password
+    </label>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

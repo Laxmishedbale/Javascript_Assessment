@@ -1,0 +1,41 @@
+<!-- Create a text input box and a div below it.
+As the user types, the div should display the same text in real time. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Text Mirror</title>
+  <style>
+    #livetext {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      min-height: 20px;
+      font-size: 16px;
+      background-color: #f9f9f9;
+    }
+    #textInput {
+      padding: 8px;
+      font-size: 16px;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <input type="text" id="textInput" placeholder="Type something..." />
+  <div id="livetext"></div>
+
+  <script>
+    const input = document.getElementById('textInput');
+    const text = document.getElementById('livetext');
+
+    input.addEventListener('input', () => {
+      text.textContent = input.value;
+    });
+  </script>
+
+</body>
+</html>
